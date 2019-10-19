@@ -1,0 +1,115 @@
+Applicatnt info: 
+    Name:
+    Phone #:
+    Email:
+    Martial Status:
+    Age:
+Address
+    Current Address:
+    Been at location > 2 years: 
+Employment:
+    Occupation
+    Employer
+    Been working for this employer for more than one year
+    Previous Occupation
+    US Citizenship
+Co-Applicatnt Information:
+    Is there a co-Applicatnt
+    Name
+    Age
+    marital Statu
+    phone #
+    Email
+Co-Applicatnt Employment
+    Occupation
+    Employer
+    Been working for this employer for more than one year
+    Previous Occupation
+    Previous employer
+    Have you or any member of your household have a history of allergies ro animals or asthma
+    are there other people living in the houses with your
+Adults member of your household 
+        Adults:
+            Name
+            Age
+            Relationship
+Minor members of your household:
+    Minor:
+        Name
+        Age
+        Relationship
+Related to family members
+    is everyone in the household in agreement aboutthis potental adoption
+    What will you do if you have a roomate/family member who may be adopted
+    Have you or any member of your family been accused of and/or found guilty for animal neglect, crulety or something similar
+household Information:
+    Home type
+    home Status
+    Pet Deposit
+    Addational pet rent 
+    rental restrictions for petss
+    landlord
+    landlord phone
+    Select all that apply to your current home 
+        doggie door  
+        pool
+        fenced yard
+    do you plan to move in the future
+    what will you do if your future residence does not permit petssunder what conditions would this amimal be outside
+    do you have animals visit your home regularly 
+        if yes what type and hoe often
+    do you have children visit your home regularly
+        if yes, what age and how iften
+    what will you do with the animal if you move
+Current petss
+    do you currently have any petss
+    current pets
+        Name
+        species/breed
+        spayed/neutered
+        age/years owned
+        last year vaccinated
+previous pets
+    have you previously had any pets
+    previous pets
+        Name
+        species/breed
+        Status
+        age
+        years owned
+General pet history
+    have you ever had a cat declawed 
+        if yes please explean
+    have you ever had a cat with feline lukemia or aids
+    have you ever rehomed an animal or surrenedered an animal to a shelter or rescue group
+        if yes explain
+Veterinarian
+    Current Veterinarian
+    emergancy Veterinarian
+amimal of intrest
+    name of animal you are interested in
+    have you met this animal in person
+    what is the reason for adopting this animal
+    what do you like about this cat
+    do you have experience with the breed
+    what personality traits do you like in a cat
+    what personality traits do you dislike in a cat
+    describe any personal situations that might cause you to have to return this animal
+    how many hours per day will this animal be alone? 
+    under what circumstances would you consider declawing this cat
+Behavior challenges
+    scratching
+    house soiling
+    fearful/shy
+    clashes with current pets
+Financial concerns
+    are you Financially able and willing to spend at least this amount each year? 
+    are you aware that adopting an animal is a lifetime commentment that may span 20 years or more
+    in an emergancy what amount are y ou willing to pay for veterinarry costs
+    what you you do with a bill greater than that amount
+    for if any reason you are unable to care for this animal what would happen to them
+discovery
+    how did you hear about us  
+        if social media site please specify which site
+Disclamer
+    i have read reviewed and agree to all the stipulations described above
