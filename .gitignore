@@ -1,3 +1,5 @@
 
 *.suo
 *.pyc
+*.pyc
+ws/.vs/ws/v16/.suo
