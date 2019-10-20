@@ -8,10 +8,10 @@ from ws import app, models, mongoDB, db, login_manager
 from .forms import LoginForm, RegisterForm
 from flask import request, redirect, render_template, url_for, flash
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import login_user
+from flask_login import login_user, logout_user, login_required, current_user
 
-@app.route('/')
 @app.route('/home')
+@login_required
 def home():
     """Renders the home page."""
     return render_template(
@@ -40,14 +40,18 @@ def about():
         message='Your application description page.'
     )
 
-@login_manager.user_loader
 def getUserById(id):
-    user = mongoDB.users.find_one({"_id": id})
-    json.loads(data, object_hook=lambda d: namedtuple('User', d.keys())(*d.values()))
+    user_data = mongoDB.users.find_one({"_id": id})
+    user = models.User()
+    user.load(user_data)
     return User.get(id)
 
+@login_manager.user_loader
 def getUserByEmail(email):
-    return mongoDB.users.find_one({"email": email})
+    user_data = mongoDB.users.find_one({"email": email})
+    user = models.User()
+    user.load(user_data)
+    return user
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -71,6 +75,7 @@ def register():
             return redirect(request.args.get("returnurl") or url_for("login"))
     return render_template('register.html', title='register', form=form)
 
+@app.route('/')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()

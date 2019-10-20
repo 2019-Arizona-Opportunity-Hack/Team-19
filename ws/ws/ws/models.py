@@ -18,3 +18,9 @@ class User(UserMixin, db.Document):
 
     def is_anonymous(self):
         return False
+
+    def load(self, user_data):
+        print(user_data)
+        self.email = user_data["email"]
+        self.password = user_data["password"]
+        return self
