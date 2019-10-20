@@ -16,7 +16,7 @@ app = Flask(__name__)
 # Set up Monogo Engine
 db = MongoEngine(app)
 
-data = mongoDB.adopters.find()
+data = mongoDB.adopterData.find()
 
 a = [a for a in data]
 #for a in data: 
@@ -28,7 +28,7 @@ def deArrayfy(arr):
         return i
 inData = deArrayfy(a)
 
-print(inData['do-not-adopt'])
+print(inData)
 
 
 
@@ -72,24 +72,24 @@ input
 
 
 
-AnimalType = inData[0]["Current Animals"][0]["name"]
+AnimalType = inData["AnimalType"]
 
 print (AnimalType)
-"""
-homeStatus= db.StringField()
 
-previousSprayed = db.BooleanField
-age = db.IntField()
-planToMove=db.StringField()
-currentVet = db.StringField()
+homeStatus= inData["homeStatus"]
+homeType= inData["homeType"]
+previousSprayed = inData["sprayed"]
+age = inData["years owned"]
+planToMove=inData["planToMove"]
+currentVet = inData["vetInfo"]["currentVet"]
 
-emergencyVet = db.StringField()
+emergencyVet = inData["vetInfo"]["currentVet"]
 
-doNotAdopt = db.BooleanField()
+doNotAdopt = inData["do-not-adopt"]
 
-criminalRecord = db.StringField()
+criminalRecord = inData["criminal record"]
 
-lengthOfStay = db.IntField()
+lengthOfStay = inData["lengthOfStay"]
 
 score = 50 
 
@@ -110,7 +110,7 @@ if homeStatus == "own":
 else:
     score = score - w2
 
-if previousSprayed == true: 
+if (previousSprayed): 
     score = score + w4
 if age > 4:
     score = score + (age - 4)
@@ -127,17 +127,18 @@ if (planToMove):
     score = score - w6
 score = score + lengthOfStay
 
-if "do-not-adopt" == true:
+if ("do-not-adopt"==True):
+    print("do not adopt list")
     score = 0
 
-if "criminal record" == true:
+if ("criminal record"==True):
+    print("there is a criminal record")
     score = 0
 
 
 #output Score
-#print score 
+print (score) 
 #return score
 
 
 #print(mongoDB.adopters.find())
-"""
