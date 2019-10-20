@@ -32,3 +32,4 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 import ws.views
 import ws.adopters
+import ws.adopterData

@@ -1,0 +1,12 @@
+'Machine Learning' Notes
+
+Input is the mongoDB table {IN progress}
+
+Single out 3-4 elements to use for demo {done}
+
+set up  huristisics for what a good cat adopter canadate is {done}
+
+Set up weights {in progress}
+
+return score 
+
