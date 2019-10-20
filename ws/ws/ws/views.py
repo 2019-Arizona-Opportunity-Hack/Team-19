@@ -62,6 +62,7 @@ def register():
 
         # Enter user only if there are no errors
         if not anyErr:
+            
             mongoDB.users.insert_one({
                 "email": form.email.data,
                 "password": generate_password_hash(form.password1.data),
