@@ -1,2 +1,8 @@
 Flask>1.0.0
 PyMongo
+flask_login
+nltk
+pandas
+flask_mongoengine
+flask_wtf
+python-twitter
